@@ -1,0 +1,173 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  /* Define a cor padrão do texto */
+  font-family: Arial, sans-serif;
+  /* Define uma fonte padrão */
+}
+
+.header-section {
+  text-align: center;
+  background-color: red;
+  padding: 10px 0;
+  /* Adiciona padding para melhor apresentação */
+}
+
+.header-section h1 {
+  margin: 0;
+  /* Remove margens do <h1> */
+  font-size: 24px;
+  /* Define o tamanho da fonte do primeiro <h1> */
+}
+
+.main-section {
+  text-align: center;
+  /* Centraliza o conteúdo na horizontal */
+  padding: 50px 20px;
+  /* Adiciona espaçamento interno */
+}
+
+.main-section h1 {
+  font-size: 70px;
+  /* Define o tamanho da fonte do segundo <h1> */
+  margin-bottom: 20px;
+  /* Espaçamento abaixo do <h1> */
+}
+
+.main-section p {
+  font-size: 37px;
+  /* Define o tamanho da fonte do <h2> */
+}
+
+.spanVerde {
+  color: rgb(81, 255, 0);
+}
+
+.spanAmarelo {
+  color: yellow;
+}
+
+.jonBet {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: rgb(10, 179, 52);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  /* Adiciona transição suave */
+  border-radius: 20px;
+  /* Arredonda todos os cantos do botão */
+  margin: 20px;
+}
+
+.blaze {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: rgb(240, 26, 18);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    /* Adiciona transição suave */
+    border-radius: 20px;
+    /* Arredonda todos os cantos do botão */
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px; /* Espaçamento entre a logo e o texto */
+  }
+  
+.blaze-img {
+    width: 60px;
+    height: 50px;
+  }
+.jonbet-img {
+    width: 60px;
+    height: 50px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  /* Efeito de zoom ao passar o mouse */
+}
+
+.second-section p {
+  font-size: 40px;
+}
+
+.videos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+video {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.notification-bar {
+  position: fixed;
+  bottom: 20px; /* Distância do rodapé */
+  left: -100%; /* Começa fora da tela à esquerda */
+  width: 250px;
+  background-color: #0bee97; /* Cor de fundo vermelha */
+  color: white; /* Cor do texto branca */
+  text-align: center;
+  padding: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Mantém a barra no topo */
+  border-radius: 5px 5px 5px 5px; /* Cantos arredondados (esquerda) */
+  opacity: 1;
+}
+
+.notification-bar.slide-in {
+  animation: slideIn 0.5s forwards; /* Animação de entrada */
+}
+
+.notification-bar.slide-out {
+  animation: slideOut 0.5s forwards; /* Animação de saída */
+}
+
+@keyframes slideIn {
+  0% {
+      left: -100%; /* Início fora da tela à esquerda */
+  }
+  100% {
+      left: 20px; /* Final na posição desejada */
+  }
+}
+
+@keyframes slideOut {
+  0% {
+      left: 20px; /* Início na posição atual */
+  }
+  100% {
+      left: -100%; /* Final fora da tela à esquerda */
+  }
+}
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #e0e0e0;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer span {
+  font-weight: bold;
+  color: #51ff00;
+}
